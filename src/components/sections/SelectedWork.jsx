@@ -14,7 +14,7 @@ export default function SelectedWork() {
     "All",
     "Full-Stack & Systems",
     "FinTech & Ledger",
-    "Systems & Low-Level",
+    "Systems Working",
     "AI / ML & Data",
   ];
 
@@ -38,7 +38,7 @@ export default function SelectedWork() {
               Featured <span className="font-semibold text-white">Systems</span> & Applications
             </h2>
             <p className="text-xs sm:text-sm md:text-base text-cinematic-silver mt-2 max-w-xl">
-              Individually engineered case studies emphasizing high-throughput queues, transactional consistency, and predictive AI models.
+              Individually engineered projects emphasizing high-throughput queues, transactional consistency, and predictive AI models.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ export default function SelectedWork() {
                       {project.category}
                     </span>
                     <span className="font-mono text-xs text-cinematic-dim">
-                      CASE STUDY // 0{idx + 1}
+                      Project // 0{idx + 1}
                     </span>
                   </div>
 
@@ -218,7 +218,7 @@ export default function SelectedWork() {
               <span>Looking for more systems & prototypes?</span>
             </h3>
             <p className="text-xs sm:text-sm text-cinematic-silver mt-1">
-              Explore additional projects including SANKALP, Employee Attrition modeling, Real Estate valuations, and Online Auction systems.
+              Explore additional projects including Employee Attrition modeling, Real valuations, and Netflix Model.
             </p>
           </div>
           <button

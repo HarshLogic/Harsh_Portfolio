@@ -29,7 +29,7 @@ export default function TechnicalSkills() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-space-900 border border-space-700/70 text-cinematic-silver font-mono text-xs uppercase tracking-widest mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice" />
-              <span>Section 03 // Technical Capabilities</span>
+              <span>Section 03 // Technical </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-light tracking-tight text-cinematic-ivory">
               Skills & <span className="font-semibold text-white">Engineering Stack</span>
@@ -113,7 +113,7 @@ export default function TechnicalSkills() {
               <div className="mt-5 pt-3 border-t border-space-850/80 flex items-center justify-between text-[10px] font-mono text-cinematic-dim">
                 <span className="flex items-center gap-1">
                   <span className="w-1 h-1 rounded-full bg-cinematic-ice" />
-                  <span>Verified Production Experience</span>
+                  <span>Production Experience</span>
                 </span>
               </div>
             </div>

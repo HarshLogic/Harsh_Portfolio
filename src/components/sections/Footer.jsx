@@ -57,7 +57,7 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs font-mono text-cinematic-dim text-center sm:text-left">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-2">
             <span>© 2026 {personalData.name}.</span>
-            <span>All master facts verified from official records.</span>
+            <span></span>
           </div>
 
           <div className="flex items-center justify-center gap-2">

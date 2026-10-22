@@ -16,7 +16,7 @@ export default function AboutSection() {
     },
     {
       title: "Algorithmic Rigor",
-      tagline: "895+ Competitive DSA problems solved",
+      tagline: "900+ Competitive DSA problems solved",
       desc: "Deep theoretical understanding of graph traversals, dynamic programming, and O(1) cache structures applied directly to real-world memory swapping and performance bottlenecks.",
       icon: ShieldCheck,
     },
@@ -58,7 +58,7 @@ export default function AboutSection() {
                 I am a B.Tech Information Technology undergraduate at Bhagwan Parshuram Institute of Technology (BPIT), GGSIPU, Delhi, with a foundational Computer Science diploma from Amity University.
               </p>
               <p>
-                My work spans backend engineering, distributed worker systems, machine learning workflows, and modern full-stack web applications. Over the past three years, I have architected asynchronous dispatch queues, ACID double-entry banking ledgers, big-data retail demand forecasting pipelines with PySpark and XGBoost, and low-level virtual machine emulators with custom instruction sets.
+                My work spans backend engineering, distributed worker systems, machine learning workflows, and modern full-stack web applications. Over the past three years, I have architected asynchronous dispatch queues, ACID double-entry banking ledgers, big-data retail demand forecasting pipelines, and low-level virtual machine emulators with custom instruction sets.
               </p>
               <p>
                 My core methodology is straightforward: thoroughly dissect the underlying systems problem, architect a reliable and mathematically rigorous solution, and present the final outcome in a refined, user-friendly digital product.
@@ -75,19 +75,19 @@ export default function AboutSection() {
                   B.Tech in Information Technology
                 </span>
                 <span className="text-[11px] sm:text-xs text-cinematic-dim font-mono">
-                  BPIT, GGSIPU · 9.28 CGPA (Class of 2027)
+                  BPIT, GGSIPU · 9.29 CGPA (Batch of 2027)
                 </span>
               </div>
 
               <div className="p-3.5 sm:p-4 rounded-2xl bg-space-900/80 border border-space-800">
                 <span className="text-[10px] sm:text-[11px] font-mono text-cinematic-ice uppercase tracking-wider block mb-1">
-                  Campus Leadership
+                  Leadership
                 </span>
                 <span className="text-xs sm:text-sm font-sans font-medium text-cinematic-ivory block">
-                  Project Chair, R&D Cell (ML)
+                  Placement Coordinator at BPIT
                 </span>
                 <span className="text-[11px] sm:text-xs text-cinematic-dim font-mono">
-                  Placement Coordinator at BPIT
+                  Project Chair, R&D Cell (ML)
                 </span>
               </div>
             </div>
@@ -118,13 +118,13 @@ export default function AboutSection() {
               <div className="grid grid-cols-2 gap-2.5 sm:gap-3 pt-2 border-t border-space-800">
                 <div className="p-2.5 sm:p-3 rounded-xl bg-space-950 border border-space-850">
                   <span className="text-[9px] sm:text-[10px] font-mono text-cinematic-dim uppercase tracking-wider block">B.Tech CGPA</span>
-                  <span className="text-lg sm:text-xl font-mono font-bold text-cinematic-ivory">9.28</span>
+                  <span className="text-lg sm:text-xl font-mono font-bold text-cinematic-ivory">9.29</span>
                   <span className="text-[9px] sm:text-[10px] font-mono text-emerald-400 block">Top Academic Tier</span>
                 </div>
                 <div className="p-2.5 sm:p-3 rounded-xl bg-space-950 border border-space-850">
                   <span className="text-[9px] sm:text-[10px] font-mono text-cinematic-dim uppercase tracking-wider block">DSA Solved</span>
-                  <span className="text-lg sm:text-xl font-mono font-bold text-cinematic-ivory">895+</span>
-                  <span className="text-[9px] sm:text-[10px] font-mono text-cinematic-ice block">LeetCode / CodeChef</span>
+                  <span className="text-lg sm:text-xl font-mono font-bold text-cinematic-ivory">900+</span>
+                  <span className="text-[9px] sm:text-[10px] font-mono text-cinematic-ice block">LeetCode / CodeChef / GFG</span>
                 </div>
                 <div className="p-2.5 sm:p-3 rounded-xl bg-space-950 border border-space-850">
                   <span className="text-[9px] sm:text-[10px] font-mono text-cinematic-dim uppercase tracking-wider block">GSSoC &apos;26 Rank</span>
@@ -150,10 +150,10 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* 3 Engineering Philosophy Pillars */}
+        {/* 3 Engineering Philosophy Pillars
         <div className="mt-14 sm:mt-16 pt-10 sm:pt-12 border-t border-space-800/80">
           <div className="text-[11px] sm:text-xs font-mono uppercase tracking-widest text-cinematic-dim mb-5 sm:mb-6">
-            Engineering Tenets // Operating Standards
+            Engineering // Operating Standards
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
             {philosophyPillars.map((pillar, idx) => {
@@ -177,7 +177,7 @@ export default function AboutSection() {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>

@@ -64,7 +64,7 @@ export function MetallicBeamMotif({ className = "w-full h-8 opacity-25" }) {
       <div className="absolute flex items-center gap-1">
         <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice shadow-glow-ice" />
         <span className="text-[9px] font-mono tracking-widest text-cinematic-silver uppercase px-2 py-0.5 rounded bg-space-900/80 border border-space-700">
-          SYSTEM INTEGRITY // 9.28 CGPA
+          SYSTEM INTEGRITY // 9.29 CGPA
         </span>
         <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice shadow-glow-ice" />
       </div>

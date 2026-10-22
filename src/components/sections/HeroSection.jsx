@@ -58,9 +58,9 @@ export default function HeroSection() {
             {/* Main Editorial Headline */}
             <div className="space-y-2.5 sm:space-y-3">
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[66px] font-sans font-light tracking-tight leading-[1.1] sm:leading-[1.05] text-cinematic-ivory">
-                Engineering <span className="font-semibold text-white">intelligent</span> products.
+                Turning complex <span className="font-semibold text-white">Idea</span> Into,
                 <br />
-                <span className="editorial-gradient-text font-serif italic tracking-normal">Designing</span> thoughtful systems.
+                <span className="editorial-gradient-text font-serif italic tracking-normal">Designing</span> things that use.
               </h1>
 
               {/* Dynamic Rotating Role Indicator */}
@@ -74,7 +74,7 @@ export default function HeroSection() {
 
             {/* Value Proposition */}
             <p className="text-sm sm:text-base lg:text-lg text-cinematic-silver font-normal max-w-2xl leading-relaxed">
-              I build thoughtful software products, scalable backend systems, and AI-powered applications that solve real problems. Focused on asynchronous processing, double-entry financial guarantees, and predictive machine learning.
+              I enjoy building things that work well behind the scenes and feel simple on the surface. From scalable backend systems and financial applications to machine learning, I focus on making technology useful and reliable.
             </p>
 
             {/* Dual CTAs & Terminal Metadata Bar */}
@@ -100,7 +100,6 @@ export default function HeroSection() {
             <div className="pt-1 flex flex-wrap items-center gap-2 sm:gap-4 text-[11px] sm:text-xs font-mono text-cinematic-dim">
               <span className="flex items-center gap-1.5">
                 <Terminal size={13} className="text-cinematic-ice" />
-                <span>Node 20 · Next 16 · Docker · PySpark</span>
               </span>
               <span className="hidden sm:inline">•</span>
               <span>Delhi, India (IST)</span>
@@ -156,7 +155,7 @@ export default function HeroSection() {
                   </div>
                   <div className="flex items-center gap-1.5 px-2 py-0.5 sm:py-1 rounded-full bg-space-950/80 border border-emerald-500/30">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span className="text-[9px] font-mono text-emerald-300 font-medium">9.28 CGPA</span>
+                    <span className="text-[9px] font-mono text-emerald-300 font-medium">Hii</span>
                   </div>
                 </div>
               </div>
@@ -164,13 +163,13 @@ export default function HeroSection() {
               {/* Floating Engineering Badge 1 (Top Right) - Cleaned of email statistics */}
               <div className="absolute -top-3 -right-3 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-space-900/95 border border-space-700 text-xs font-mono text-cinematic-ivory shadow-lg backdrop-blur-md animate-float-subtle">
                 <Sparkles size={13} className="text-cinematic-ice" />
-                <span>Full-Stack & Systems</span>
+                <span>Software Engineer</span>
               </div>
 
               {/* Floating Engineering Badge 2 (Bottom Left) */}
               <div className="absolute -bottom-3 -left-3 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-space-900/95 border border-space-700 text-xs font-mono text-cinematic-ivory shadow-lg backdrop-blur-md">
                 <ShieldCheck size={13} className="text-emerald-400" />
-                <span>895+ Problems Solved</span>
+                <span>Idea like Shinchan</span>
               </div>
             </div>
           </div>

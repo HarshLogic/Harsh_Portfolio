@@ -186,19 +186,19 @@ export default function Navbar() {
               </div>
               <div>
                 <h3 className="text-base font-semibold text-cinematic-ivory">Harshvardhan Sinha — Resume</h3>
-                <p className="text-xs text-cinematic-silver font-mono">B.Tech IT · BPIT (CGPA 9.28) · Class of 2027</p>
+                <p className="text-xs text-cinematic-silver font-mono">B.Tech IT · BPIT · Batch 2027</p>
               </div>
             </div>
 
             <div className="p-4 rounded-xl bg-space-950 border border-space-800 text-xs text-cinematic-silver space-y-2 mb-6">
               <div className="flex justify-between py-1 border-b border-space-850">
                 <span className="text-cinematic-dim">Primary Focus:</span>
-                <span className="text-cinematic-ivory font-mono">Backend Systems & AI Engineering</span>
+                <span className="text-cinematic-ivory font-mono">SDE & AI Engineering</span>
               </div>
-              <div className="flex justify-between py-1 border-b border-space-850">
+              {/* <div className="flex justify-between py-1 border-b border-space-850">
                 <span className="text-cinematic-dim">Total Solved:</span>
                 <span className="text-cinematic-ivory font-mono">895+ Competitive Problems</span>
-              </div>
+              </div> */}
               <div className="flex justify-between py-1 border-b border-space-850">
                 <span className="text-cinematic-dim">Current Role:</span>
                 <span className="text-cinematic-ivory font-mono">Software Dev Intern @ RBP FINIVIS</span>

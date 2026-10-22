@@ -18,7 +18,7 @@ export default function AchievementsSection() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-space-900 border border-space-700/70 text-cinematic-silver font-mono text-xs uppercase tracking-widest mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice" />
-              <span>Section 06 // Competitive Rigor & Honors</span>
+              <span>Section 06 // Competitive Programming & Honors</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-light tracking-tight text-cinematic-ivory">
               Achievements & <span className="font-semibold text-white">Competitive Proof</span>
@@ -60,7 +60,7 @@ export default function AchievementsSection() {
             <div>
               <div className="flex items-baseline gap-2">
                 <span className="text-3xl sm:text-4xl lg:text-5xl font-mono font-bold text-white tracking-tight">
-                  895+
+                  900+
                 </span>
                 <span className="text-xs sm:text-sm font-mono text-cinematic-silver">Problems Solved</span>
               </div>
