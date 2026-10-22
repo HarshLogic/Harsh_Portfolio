@@ -91,3 +91,4 @@ All project details, metrics, and URLs are stored in [`src/data/portfolioData.js
 2. **Flagship Project Repositories**: Update the placeholder GitHub links in `flagshipProjects` in `src/data/portfolioData.js` to point to the exact public repositories once published.
 3. **Live Demos**: If public deployments exist for *FullStack Inbox*, *FinFlow*, or *Bankify*, add their live URLs to `links.demo`.
 4. **Domain Configuration**: Replace `https://harshlogic.dev` in `src/app/layout.js`, `sitemap.js`, and `robots.js` with your custom production domain if different.
+# Harsh_Portfolio
