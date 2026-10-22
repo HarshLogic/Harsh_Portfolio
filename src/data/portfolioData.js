@@ -1,9 +1,3 @@
-/**
- * Central Portfolio Data Source for Harshvardhan Sinha
- * Source of truth: Master Profile Document & Verified Credentials
- * All links, metrics, and case studies can be centrally updated here.
- */
-
 export const personalData = {
   name: "Harshvardhan Sinha",
   shortName: "Harsh",
@@ -13,17 +7,16 @@ export const personalData = {
     "Full-Stack Engineer",
     "Backend & Systems Developer",
     "AI/ML Engineer",
-    "Distributed Systems Practitioner",
   ],
-  tagline: "Engineering intelligent products. Designing thoughtful experiences.",
+  tagline: "Building things that work smarter and feel better.",
   heroSubheadline:
-    "Information Technology undergraduate at BPIT, GGSIPU (CGPA 9.28). Architecting resilient backend systems, asynchronous queues, and AI-driven predictive applications that solve tangible problems.",
+    "Information Technology undergraduate at BPIT, GGSIPU. Architecting resilient backend systems, asynchronous queues, and AI-driven predictive applications that solve problems.",
   aboutPitch:
-    "I operate at the intersection of backend engineering rigor, intelligent data systems, and polished digital interfaces. Whether designing double-entry financial ledgers with atomic guarantees, orchestrating resilient asynchronous worker queues, or training predictive machine learning models, I build software that performs with precision beneath the surface.",
+    "I enjoy building software that combinesEngineering intelligent products. Designing thoughtful experiences. strong backend systems, smart data solutions, and clean, user-friendly interfaces. From building reliable financial systems and managing background jobs to developing machine learning models, I focus on creating software that works smoothly, solves real problems, and delivers a great user experience.",
   location: "Delhi, India",
   timezone: "Asia/Kolkata (IST · UTC+5:30)",
   availability: "Open to SDE, Full-Stack & AI/ML Opportunities",
-  educationBrief: "B.Tech in IT @ BPIT, GGSIPU · 2027 · CGPA: 9.28",
+  educationBrief: "B.Tech in IT @ BPIT, GGSIPU · 2027 · CGPA: 9.29",
 
   // Replaceable Avatar Configuration
   avatar: {
@@ -86,7 +79,7 @@ export const personalData = {
 
   // Core Statistics for Quick Credibility (4 balanced, verified metrics)
   highlightStats: [
-    { label: "B.Tech CGPA", value: "9.28", suffix: "/10", context: "Information Technology, BPIT" },
+    { label: "B.Tech CGPA", value: "9.29", suffix: "/10", context: "Information Technology, BPIT" },
     { label: "Problems Solved", value: "895+", suffix: "", context: "LeetCode, CodeChef, HackerRank" },
     { label: "Flipkart GRiD 8.0", value: "Semi-Finalist", suffix: "", context: "National Engineering Challenge" },
     { label: "GSSoC '26 Rank", value: "Top 5%", suffix: "", context: "Project Admin · 1,976 Points" },
@@ -132,14 +125,14 @@ export const flagshipProjects = [
       "Structured local reproducibility using Docker Compose for multi-container Redis, Postgres, and ES orchestration.",
     ],
     links: {
-      github: "https://github.com/HarshLogic",
-      demo: null,
+      github: "https://github.com/HarshLogic/Full-stack-Email-Job-Scheduler",
+      demo: "https://full-stack-email-job-scheduler-three.vercel.app/",
       isRepoPublic: true,
     },
   },
   {
-    id: "finflow",
-    title: "FinFlow — Personal Finance & Wealth Management",
+    id: "Finance Flow",
+    title: "Finance Flow — Personal Finance & Wealth Management",
     tagline: "Multi-Asset Investment Tracking, 50-30-20 Budgeting & AI Analytics",
     category: "FinTech & Ledger",
     featured: true,
@@ -172,8 +165,8 @@ export const flagshipProjects = [
       "Administered repository during GirlScript Summer of Code 2026, orchestrating 10+ contributors and merging 14 clean pull requests.",
     ],
     links: {
-      github: "https://github.com/HarshLogic",
-      demo: null,
+      github: "https://github.com/HarshLogic/FinFlow-Personal-Finance",
+      demo: "https://finflowpr.vercel.app/",
       isRepoPublic: true,
     },
   },
@@ -211,8 +204,8 @@ export const flagshipProjects = [
       "Derived account balances dynamically from historical verified ledger rows to ensure immutable audit trails.",
     ],
     links: {
-      github: "https://github.com/HarshLogic",
-      demo: null,
+      github: "https://github.com/HarshLogic/Bankify-Banking-Dashboard",
+      demo: "https://bankify-banking-dashboard.vercel.app/",
       isRepoPublic: true,
     },
   },
@@ -249,8 +242,8 @@ export const flagshipProjects = [
       "Exposed the processor's execution state (registers, stack pointer, program counter) via Spring Boot REST APIs for real-time frontend visualization.",
     ],
     links: {
-      github: "https://github.com/HarshLogic",
-      demo: null,
+      github: "https://github.com/HarshLogic/Custom-Virtual-Machine-OS-Emulator",
+      demo: "https://github.com/HarshLogic/Custom-Virtual-Machine-OS-Emulator",
       isRepoPublic: true,
     },
   },
@@ -288,25 +281,25 @@ export const flagshipProjects = [
       "Packaged the analytical models into an interactive Streamlit operational dashboard, reducing stock allocation turnaround by 30%.",
     ],
     links: {
-      github: "https://github.com/HarshLogic",
-      demo: null,
+      github: "https://github.com/HarshLogic/End-to-End-Sales-Forecasting-Demand-Intelligence-System",
+      demo: "https://github.com/HarshLogic/End-to-End-Sales-Forecasting-Demand-Intelligence-System",
       isRepoPublic: true,
     },
   },
 ];
 
 export const archiveProjects = [
-  {
-    id: "sankalp-skillstack",
-    title: "SANKALP — SkillStack Hub",
-    tagline: "AI-Powered Internship & Job Readiness Platform",
-    category: "Full-Stack Web",
-    technologies: ["TypeScript", "React", "REST APIs", "Framer Motion", "Tailwind CSS"],
-    description:
-      "An intelligent career preparation platform featuring simulated AI mock interviews, rubric-based automated scorecards, and structured candidate screening workflows for recruiters.",
-    role: "Full-Stack Developer",
-    links: { github: "https://github.com/HarshLogic", demo: null },
-  },
+  // {
+  //   id: "sankalp-skillstack",
+  //   title: "SANKALP — SkillStack Hub",
+  //   tagline: "AI-Powered Internship & Job Readiness Platform",
+  //   category: "Full-Stack Web",
+  //   technologies: ["TypeScript", "React", "REST APIs", "Framer Motion", "Tailwind CSS"],
+  //   description:
+  //     "An intelligent career preparation platform featuring simulated AI mock interviews, rubric-based automated scorecards, and structured candidate screening workflows for recruiters.",
+  //   role: "Full-Stack Developer",
+  //   links: { github: "https://github.com/HarshLogic", demo: null },
+  // },
   {
     id: "employee-attrition",
     title: "Employee Attrition Predictive Intelligence",
@@ -316,30 +309,30 @@ export const archiveProjects = [
     description:
       "Machine learning classification model analyzing HR demographic and compensation metrics to identify primary drivers of organizational talent turnover.",
     role: "ML Practitioner",
-    links: { github: "https://github.com/HarshLogic", demo: null },
+    links: { github: "https://github.com/HarshLogic/Employee-Attrition-Prediction", demo: "https://github.com/HarshLogic/Employee-Attrition-Prediction" },
   },
   {
     id: "house-price-prediction",
-    title: "Geospatial Real Estate Valuation Model",
+    title: "Netflix Movies & TV Shows Clustering",
     tagline: "Multi-Variable Regression & Feature Engineering",
     category: "AI / ML & Data",
     technologies: ["Python", "NumPy", "Pandas", "Scikit-learn", "Ridge Regression"],
     description:
-      "Predictive pricing model integrating square footage, zip-code neighborhood indices, and historical sale dynamics to estimate accurate property valuations.",
+      "I worked on an Unsupervised Machine Learning problem using a dataset of Netflix. My main objective was to analyze the content trends on Netflix and group similar movies and TV shows into clusters based on their text descriptions. This kind of clustering is essentially the foundational step for building a content-based recommendation system.",
     role: "ML Practitioner",
-    links: { github: "https://github.com/HarshLogic", demo: null },
+    links: { github: "https://github.com/HarshLogic/Netflix-Movies-Suggestion-", demo: "https://github.com/HarshLogic/Netflix-Movies-Suggestion-" },
   },
-  {
-    id: "online-auction",
-    title: "Real-Time Online Auction System",
-    tagline: "High-Concurrency Bidding Engine with REST APIs",
-    category: "Backend & Systems",
-    technologies: ["JavaScript ES6+", "Node.js", "Express", "MySQL", "REST APIs"],
-    description:
-      "Architected during internship at Kabhi Tech: responsive auction platform featuring instant price increments, automated bid validation, and database schema optimization.",
-    role: "Web Dev Intern",
-    links: { github: "https://github.com/HarshLogic", demo: null },
-  },
+  // {
+  //   id: "online-auction",
+  //   title: "Real-Time Online Auction System",
+  //   tagline: "High-Concurrency Bidding Engine with REST APIs",
+  //   category: "Backend & Systems",
+  //   technologies: ["JavaScript ES6+", "Node.js", "Express", "MySQL", "REST APIs"],
+  //   description:
+  //     "Architected during internship at Kabhi Tech: responsive auction platform featuring instant price increments, automated bid validation, and database schema optimization.",
+  //   role: "Web Dev Intern",
+  //   links: { github: "https://github.com/HarshLogic", demo: null },
+  // }
 ];
 
 export const technicalSkills = [
@@ -352,8 +345,8 @@ export const technicalSkills = [
       { name: "JavaScript ES6+", level: "Advanced", core: true },
       { name: "Python", level: "Advanced", core: true },
       { name: "SQL", level: "Advanced", core: true },
-      { name: "C++", level: "Proficient", core: true },
-      { name: "Scala", level: "Familiar", core: false },
+      // { name: "C++", level: "Proficient", core: true },
+      // { name: "Scala", level: "Familiar", core: false },
       { name: "HTML5 / CSS3", level: "Advanced", core: true },
     ],
   },
@@ -363,28 +356,28 @@ export const technicalSkills = [
     skills: [
       { name: "Node.js", level: "Advanced", core: true },
       { name: "Express.js", level: "Advanced", core: true },
-      { name: "Spring Boot", level: "Proficient", core: true },
+      // { name: "Spring Boot", level: "Proficient", core: true },
       { name: "REST APIs", level: "Advanced", core: true },
       { name: "GraphQL", level: "Proficient", core: true },
-      { name: "Prisma ORM", level: "Advanced", core: true },
+      // { name: "Prisma ORM", level: "Advanced", core: true },
       { name: "BullMQ", level: "Advanced", core: true },
       { name: "JWT Auth & RBAC", level: "Advanced", core: true },
       { name: "System Architecture", level: "Proficient", core: true },
-      { name: "Nodemailer", level: "Proficient", core: false },
+      // { name: "Nodemailer", level: "Proficient", core: false },
     ],
   },
   {
-    category: "Databases, Caching & Search",
+    category: "Databases",
     summary: "ACID consistency, key-value stores & inverted index search",
     skills: [
       { name: "PostgreSQL", level: "Advanced", core: true },
       { name: "MongoDB Atlas", level: "Advanced", core: true },
-      { name: "ACID Sessions", level: "Advanced", core: true },
+      // { name: "ACID Sessions", level: "Advanced", core: true },
       { name: "Redis", level: "Advanced", core: true },
-      { name: "Elasticsearch", level: "Proficient", core: true },
+      // { name: "Elasticsearch", level: "Proficient", core: true },
       { name: "MySQL", level: "Advanced", core: true },
-      { name: "Aggregation Pipelines", level: "Advanced", core: true },
-      { name: "Firebase", level: "Proficient", core: false },
+      // { name: "Aggregation Pipelines", level: "Advanced", core: true },
+      // { name: "Firebase", level: "Proficient", core: false },
     ],
   },
   {
@@ -394,10 +387,10 @@ export const technicalSkills = [
       { name: "Scikit-learn", level: "Advanced", core: true },
       { name: "XGBoost", level: "Advanced", core: true },
       { name: "NumPy & Pandas", level: "Advanced", core: true },
-      { name: "Apache Spark", level: "Proficient", core: true },
-      { name: "Apache Hadoop", level: "Proficient", core: true },
+      // { name: "Apache Spark", level: "Proficient", core: true },
+      // { name: "Apache Hadoop", level: "Proficient", core: true },
       { name: "Time-Series Forecasting", level: "Advanced", core: true },
-      { name: "Anomaly Detection", level: "Advanced", core: true },
+      // { name: "Anomaly Detection", level: "Advanced", core: true },
       { name: "Feature Engineering", level: "Advanced", core: true },
       { name: "Streamlit", level: "Advanced", core: true },
       { name: "Matplotlib & EDA", level: "Proficient", core: false },
@@ -411,21 +404,21 @@ export const technicalSkills = [
       { name: "React.js", level: "Advanced", core: true },
       { name: "Next.js 16 / 14", level: "Advanced", core: true },
       { name: "Tailwind CSS", level: "Advanced", core: true },
-      { name: "Framer Motion", level: "Advanced", core: true },
-      { name: "Redux Toolkit", level: "Proficient", core: true },
+      // { name: "Framer Motion", level: "Advanced", core: true },
+      // { name: "Redux Toolkit", level: "Proficient", core: true },
       { name: "Recharts", level: "Proficient", core: true },
-      { name: "React Native", level: "Familiar", core: false },
-      { name: "DOM & State Optimisation", level: "Advanced", core: true },
+      // { name: "React Native", level: "Familiar", core: false },
+      // { name: "DOM & State Optimisation", level: "Advanced", core: true },
     ],
   },
   {
-    category: "DevOps, Cloud & Tooling",
-    summary: "Containerization, automated deployment & robust API verification",
+    category: "Tooling",
+    summary: "Automated deployment & robust API verification",
     skills: [
       { name: "Docker & Compose", level: "Advanced", core: true },
       { name: "Git & GitHub", level: "Advanced", core: true },
       { name: "GitHub Actions / CI/CD", level: "Proficient", core: true },
-      { name: "Linux / Shell", level: "Advanced", core: true },
+      // { name: "Linux / Shell", level: "Advanced", core: true },
       { name: "Postman API Testing", level: "Advanced", core: true },
       { name: "AWS", level: "Familiar", core: false },
       { name: "Vercel & Railway", level: "Advanced", core: true },
@@ -444,17 +437,17 @@ export const technicalSkills = [
       { name: "System Design Principles", level: "Proficient", core: true },
     ],
   },
-  {
-    category: "Design, Analytics & Workflow",
-    summary: "Cross-functional product delivery and specification",
-    skills: [
-      { name: "Figma", level: "Proficient", core: true },
-      { name: "Power BI", level: "Proficient", core: false },
-      { name: "Agile & Jira", level: "Proficient", core: true },
-      { name: "SEO Optimization", level: "Proficient", core: false },
-      { name: "LaTeX", level: "Proficient", core: false },
-    ],
-  },
+  // {
+  //   category: "Design, Analytics & Workflow",
+  //   summary: "Cross-functional product delivery and specification",
+  //   skills: [
+  //     { name: "Figma", level: "Proficient", core: true },
+  //     { name: "Power BI", level: "Proficient", core: false },
+  //     { name: "Agile & Jira", level: "Proficient", core: true },
+  //     { name: "SEO Optimization", level: "Proficient", core: false },
+  //     { name: "LaTeX", level: "Proficient", core: false },
+  //   ],
+  // },
 ];
 
 /**
@@ -475,7 +468,7 @@ export const experienceTimeline = [
       "Engineered responsive user flows and streamlined component rendering performance.",
       "Collaborated closely with senior engineers on system stability and error logging.",
     ],
-    technologies: ["JavaScript", "React", "REST APIs", "Debugging", "Web Optimization"],
+    technologies: ["JavaScript", "React", "REST APIs", "Debugging", "Web Optimization", "DevOps"],
   },
   {
     role: "AI & Data Science Intern",
@@ -490,7 +483,7 @@ export const experienceTimeline = [
       "Executed distributed data transformations across large-scale datasets using Apache Spark & Hadoop.",
       "Created operational Streamlit analytics dashboards translating raw machine learning inferences into commercial insights.",
     ],
-    technologies: ["Python", "Spark", "Hadoop", "XGBoost", "Scikit-learn", "Streamlit", "SQL"],
+    technologies: ["Python", "XGBoost", "Scikit-learn", "Streamlit", "SQL"],
   },
   {
     role: "Project Admin & Core Contributor",
@@ -543,7 +536,7 @@ export const certificatesList = [
       "Engineered Python computer vision pipelines and statistical classification benchmarks.",
       "Hands-on architectural evaluations of deep neural networks.",
     ],
-    skills: ["Python", "Machine Learning", "Deep Learning", "Computer Vision", "TSSC Standards"],
+    skills: ["Python", "Machine Learning", "Deep Learning", "Computer Vision"],
     verificationUrl: null, // Editable placeholder for direct certificate URL
     status: "Verified Trainee Credential",
   },
@@ -578,7 +571,7 @@ export const certificatesList = [
       "Mastered core Python language paradigms, memory model, and collections.",
       "Built clean object-oriented modules and algorithmic problem solvers.",
     ],
-    skills: ["Python", "Data Structures", "OOP", "Algorithm Design"],
+    skills: ["Python", "OOP"],
     verificationUrl: null,
     status: "Verified Credential",
   },
@@ -703,15 +696,15 @@ export const competitiveAndAchievements = [
       "Coordinating recruitment drives, liaising between tier-1 tech recruiters and undergraduate students, and facilitating technical mock interviews.",
     badge: "Campus Leadership",
   },
-  {
-    category: "Technical Cohort",
-    title: "Harkirat Cohort 4.0 Active Member",
-    highlight: "Cohort 4.0",
-    suffix: "Full-Stack & Web3",
-    description:
-      "Engaged in intensive deep-dive engineering on modern full-stack architectures, distributed systems, Docker orchestration, and advanced DevOps practices.",
-    badge: "Cohort",
-  },
+  // {
+  //   category: "Technical Cohort",
+  //   title: "Harkirat Cohort 4.0 Active Member",
+  //   highlight: "Cohort 4.0",
+  //   suffix: "Full-Stack & Web3",
+  //   description:
+  //     "Engaged in intensive deep-dive engineering on modern full-stack architectures, distributed systems, Docker orchestration, and advanced DevOps practices.",
+  //   badge: "Cohort",
+  // },
 ];
 
 export const educationHistory = [
@@ -721,7 +714,7 @@ export const educationHistory = [
     degree: "Bachelor of Technology — Information Technology",
     period: "August 2024 – May/June 2027",
     status: "In Progress (3rd Year)",
-    score: "9.28 / 10 CGPA",
+    score: "9.29 / 10 CGPA",
     description:
       "Focusing on Distributed Operating Systems, Advanced Database Management, Object-Oriented Software Design, Machine Learning, and Computer Networks. Serving as Project Chair for R&D Cell and Placement Coordinator.",
     location: "Delhi, India",
@@ -734,7 +727,7 @@ export const educationHistory = [
     status: "Graduated with Distinction",
     score: "8.08 / 10 CGPA",
     description:
-      "Built rigorous foundations in C++, Data Structures, Relational Databases, Web Technologies, and Computer Architecture.",
+      "Built rigorous foundations in Java, Data Structures, Relational Databases, Web Technologies, and Computer Architecture.",
     location: "Noida, India",
   },
 ];
