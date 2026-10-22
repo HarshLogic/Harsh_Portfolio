@@ -1,71 +1,60 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "@/components/sections/Navbar";
 import HeroSection from "@/components/sections/HeroSection";
 import SelectedWork from "@/components/sections/SelectedWork";
 import AboutSection from "@/components/sections/AboutSection";
 import TechnicalSkills from "@/components/sections/TechnicalSkills";
 import ExperienceTimeline from "@/components/sections/ExperienceTimeline";
+import CertificatesSection from "@/components/sections/CertificatesSection";
 import AchievementsSection from "@/components/sections/AchievementsSection";
 import EducationSection from "@/components/sections/EducationSection";
 import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 import CustomCursor from "@/components/ui/CustomCursor";
-import { acoustic } from "@/components/ui/AcousticFeedback";
 
 export default function Home() {
-  const [soundEnabled, setSoundEnabled] = useState(false);
-
-  const playAudioCue = () => {
-    if (soundEnabled) {
-      acoustic.playClick();
-    }
-  };
-
   return (
-    <div className="relative min-h-screen bg-space-950 text-cinematic-ivory selection:bg-cinematic-ice selection:text-space-950">
-      {/* Cinematic Custom Pointer Halo (Desktop Only) */}
+    <div className="relative min-h-screen bg-space-950 text-cinematic-ivory selection:bg-cinematic-ice selection:text-space-950 overflow-x-hidden">
+      {/* Cinematic Custom Pointer Halo (Desktop Only, Smooth Independent Follower) */}
       <CustomCursor />
 
       {/* Persistent Navigation */}
-      <Navbar
-        soundEnabled={soundEnabled}
-        setSoundEnabled={(val) => {
-          setSoundEnabled(val);
-          if (val) acoustic.playPop();
-        }}
-      />
+      <Navbar />
 
       {/* Main Content Flow */}
       <main className="flex flex-col w-full">
         {/* Hero Section */}
-        <HeroSection playAudioCue={playAudioCue} />
+        <HeroSection />
 
-        {/* Selected Work & Systems Visualizer */}
-        <SelectedWork playAudioCue={playAudioCue} />
+        {/* Selected Work & Systems Architecture Visualizer */}
+        <SelectedWork />
 
         {/* About Section & Philosophy */}
         <AboutSection />
 
         {/* Categorized Technical Skills */}
-        <TechnicalSkills playAudioCue={playAudioCue} />
+        <TechnicalSkills />
 
-        {/* Experience Timeline */}
+        {/* Professional Work Experience Timeline */}
         <ExperienceTimeline />
 
-        {/* Achievements & Competitive Coding */}
+        {/* Dedicated Verified Certificates & Traineeships */}
+        <CertificatesSection />
+
+        {/* Achievements & Competitive Coding Proof */}
         <AchievementsSection />
 
-        {/* Education & Certifications */}
+        {/* Academic Degrees & Collegiate Standing */}
         <EducationSection />
 
         {/* Contact & Dispatch */}
-        <ContactSection playAudioCue={playAudioCue} />
+        <ContactSection />
       </main>
 
       {/* Footer */}
-      <Footer playAudioCue={playAudioCue} />
+      <Footer />
     </div>
   );
 }

@@ -17,14 +17,14 @@ export const personalData = {
   ],
   tagline: "Engineering intelligent products. Designing thoughtful experiences.",
   heroSubheadline:
-    "Information Technology undergraduate at BPIT, GGSIPU (CGPA 9.28). Architecting resilient backend systems, high-throughput asynchronous queues, and AI-driven predictive applications that solve tangible problems.",
+    "Information Technology undergraduate at BPIT, GGSIPU (CGPA 9.28). Architecting resilient backend systems, asynchronous queues, and AI-driven predictive applications that solve tangible problems.",
   aboutPitch:
-    "I operate at the intersection of backend engineering rigor, intelligent data systems, and polished digital interfaces. Whether designing double-entry financial ledgers with atomic guarantees, scaling asynchronous queues to 10k+ jobs/hour, or training predictive machine learning models, I build software that performs with precision beneath the surface.",
+    "I operate at the intersection of backend engineering rigor, intelligent data systems, and polished digital interfaces. Whether designing double-entry financial ledgers with atomic guarantees, orchestrating resilient asynchronous worker queues, or training predictive machine learning models, I build software that performs with precision beneath the surface.",
   location: "Delhi, India",
   timezone: "Asia/Kolkata (IST · UTC+5:30)",
   availability: "Open to SDE, Full-Stack & AI/ML Opportunities",
   educationBrief: "B.Tech in IT @ BPIT, GGSIPU · 2027 · CGPA: 9.28",
-  
+
   // Replaceable Avatar Configuration
   avatar: {
     src: "/images/avatar.jpg",
@@ -35,9 +35,8 @@ export const personalData = {
   // Verified Contact & Social Links
   contact: {
     email: "harshvardhansinha17@gmail.com",
-    // Resume link - marked as editable placeholder until user supplies direct PDF URL or uploads resume.pdf
-    resumeUrl: "/Harshvardhan_Sinha_Resume.pdf", // User can place file in /public/Harshvardhan_Sinha_Resume.pdf
-    hasDirectResume: false, // Set to true when PDF file is placed in public
+    resumeUrl: "/Harshvardhan_Sinha_Resume.pdf",
+    hasDirectResume: false,
   },
 
   socials: [
@@ -85,27 +84,27 @@ export const personalData = {
     },
   ],
 
-  // Core Statistics for Quick Credibility
+  // Core Statistics for Quick Credibility (4 balanced, verified metrics)
   highlightStats: [
     { label: "B.Tech CGPA", value: "9.28", suffix: "/10", context: "Information Technology, BPIT" },
     { label: "Problems Solved", value: "895+", suffix: "", context: "LeetCode, CodeChef, HackerRank" },
-    { label: "Email Queue Capacity", value: "10,000+", suffix: "/hr", context: "Distributed BullMQ Workers" },
+    { label: "Flipkart GRiD 8.0", value: "Semi-Finalist", suffix: "", context: "National Engineering Challenge" },
     { label: "GSSoC '26 Rank", value: "Top 5%", suffix: "", context: "Project Admin · 1,976 Points" },
   ],
 };
 
 export const flagshipProjects = [
   {
-    id: "inbox-scheduler",
-    title: "FullStack Inbox Email Job Scheduler",
-    tagline: "High-Throughput Distributed Queue & Async Email Dispatch Engine",
-    category: "Backend & Systems",
+    id: "email-job-scheduler",
+    title: "Full-Stack Email Job Scheduler",
+    tagline: "Full-Stack Scheduling, Background Job Processing & BullMQ Queue Execution",
+    category: "Full-Stack & Systems",
     featured: true,
     accentColor: "#91B7FF",
     metrics: [
       { label: "Lighthouse Score", value: "98" },
       { label: "Time to First Byte", value: "< 800ms" },
-      { label: "Async Capacity", value: "10k+ / hr", note: "5 concurrent worker threads" },
+      { label: "Worker Concurrency", value: "5 Workers", note: "Isolated concurrent worker threads" },
       { label: "Elasticsearch Search", value: "< 50ms", note: "Indexed 100k+ dispatch logs" },
       { label: "CSV Processing", value: "5k+ rows < 2s", note: "Bulk recipient parser" },
     ],
@@ -123,18 +122,18 @@ export const flagshipProjects = [
       "Railway",
     ],
     overview:
-      "A distributed, high-capacity email campaign and job scheduler engineered to process large-volume batch broadcasts without thread starvation or memory leaks.",
+      "A complete full-stack email campaign and task scheduler engineered for reliable batch execution, background worker queue management, and real-time dispatch monitoring without thread starvation or memory leaks.",
     challenge:
-      "Large-scale asynchronous email delivery requires managing burst loads, handling third-party rate limits, safeguarding against worker crashes, and offering sub-second full-text audit search across millions of historical log records.",
+      "Large-scale asynchronous email scheduling requires handling burst loads, managing third-party rate limits, surviving worker crashes with automatic retry policies, and offering sub-second full-text audit search across historical logs.",
     architectureDecisions: [
-      "Separated the ingestion REST API from background consumers via Redis-backed BullMQ priority queues.",
-      "Provisioned 5 isolated worker processes with automatic exponential backoff retry policies and dead-letter queues.",
+      "Engineered full-stack workflow with Next.js frontend, Express API layer, and Redis-backed BullMQ priority queues.",
+      "Provisioned 5 isolated background worker processes with automatic exponential backoff retry policies and dead-letter queues.",
       "Integrated Elasticsearch with multi-field analyzer mappings to achieve sub-50ms query latency over 100k+ audit logs.",
-      "Structured local reproducibility using Docker Compose for isolated multi-container Redis, Postgres, and ES orchestration.",
+      "Structured local reproducibility using Docker Compose for multi-container Redis, Postgres, and ES orchestration.",
     ],
     links: {
-      github: "https://github.com/HarshLogic", // TODO: Update to exact repository URL once public
-      demo: null, // Editable placeholder
+      github: "https://github.com/HarshLogic",
+      demo: null,
       isRepoPublic: true,
     },
   },
@@ -173,7 +172,7 @@ export const flagshipProjects = [
       "Administered repository during GirlScript Summer of Code 2026, orchestrating 10+ contributors and merging 14 clean pull requests.",
     ],
     links: {
-      github: "https://github.com/HarshLogic", // TODO: Update to exact repository URL
+      github: "https://github.com/HarshLogic",
       demo: null,
       isRepoPublic: true,
     },
@@ -212,16 +211,16 @@ export const flagshipProjects = [
       "Derived account balances dynamically from historical verified ledger rows to ensure immutable audit trails.",
     ],
     links: {
-      github: "https://github.com/HarshLogic", // TODO: Update to exact repository URL
+      github: "https://github.com/HarshLogic",
       demo: null,
       isRepoPublic: true,
     },
   },
   {
-    id: "custom-os-vm",
-    title: "Custom OS & Virtual Machine Emulator",
+    id: "jvm-emulator",
+    title: "J-VM — Custom Virtual Machine & OS Emulator",
     tagline: "Stack-Based CPU Simulation, Custom ISA & O(1) LRU Page Cache",
-    category: "Backend & Systems",
+    category: "Systems & Low-Level",
     featured: true,
     accentColor: "#A78BFA",
     metrics: [
@@ -250,7 +249,7 @@ export const flagshipProjects = [
       "Exposed the processor's execution state (registers, stack pointer, program counter) via Spring Boot REST APIs for real-time frontend visualization.",
     ],
     links: {
-      github: "https://github.com/HarshLogic", // TODO: Update to exact repository URL
+      github: "https://github.com/HarshLogic",
       demo: null,
       isRepoPublic: true,
     },
@@ -289,7 +288,7 @@ export const flagshipProjects = [
       "Packaged the analytical models into an interactive Streamlit operational dashboard, reducing stock allocation turnaround by 30%.",
     ],
     links: {
-      github: "https://github.com/HarshLogic", // TODO: Update to exact repository URL
+      github: "https://github.com/HarshLogic",
       demo: null,
       isRepoPublic: true,
     },
@@ -458,6 +457,10 @@ export const technicalSkills = [
   },
 ];
 
+/**
+ * Professional Work Experience & Internships
+ * (Certificates moved to dedicated Certificates section)
+ */
 export const experienceTimeline = [
   {
     role: "Software Development & AI Automation Intern",
@@ -505,34 +508,6 @@ export const experienceTimeline = [
     technologies: ["Open Source", "React", "Node.js", "Git / GitHub", "Code Review"],
   },
   {
-    role: "Artificial Intelligence Trainee",
-    company: "Samsung Innovation Campus",
-    period: "December 2025 – March 2026",
-    status: "Certified",
-    location: "Delhi, India",
-    summary:
-      "Selected for intensive AI and Python engineering training supported by the Telecom Sector Skill Council and Samsung Innovation Campus.",
-    highlights: [
-      "Completed rigorous modules in statistical learning, algorithms, and deep neural concepts.",
-      "Applied Python pipelines to computer vision and predictive regression benchmarks.",
-    ],
-    technologies: ["Python", "AI Fundamentals", "Machine Learning", "TSSC Standards"],
-  },
-  {
-    role: "AI/ML Summer Trainee",
-    company: "WinnoVation Education Services",
-    period: "June 2025 – July/August 2025",
-    status: "Completed",
-    location: "Delhi, India",
-    summary:
-      "Immersive practical training in applied machine learning, exploratory data analysis, data pre-processing, regression, classification, and unsupervised clustering algorithms.",
-    highlights: [
-      "Implemented standard ML algorithms from scratch and tuned hyper-parameters.",
-      "Evaluated model performance using precision-recall curves, ROC-AUC, and confusion matrices.",
-    ],
-    technologies: ["Scikit-learn", "NumPy", "Pandas", "Supervised Learning", "Clustering"],
-  },
-  {
     role: "Web Development Intern",
     company: "Kabhi Tech",
     period: "January 2024 – March 2024",
@@ -546,6 +521,83 @@ export const experienceTimeline = [
       "Enforced accessibility standards and on-page technical SEO optimizations.",
     ],
     technologies: ["JavaScript ES6+", "Node.js", "Express", "MySQL", "REST APIs", "SEO"],
+  },
+];
+
+/**
+ * Dedicated Certifications & Industrial Training Section Data
+ * Moved from Experience into full certificate cards with verification details.
+ */
+export const certificatesList = [
+  {
+    id: "samsung-innovation",
+    title: "Artificial Intelligence Course Certification",
+    issuer: "Samsung Innovation Campus & Telecom Sector Skill Council (TSSC)",
+    period: "December 2025 – March 2026",
+    credentialType: "Industrial AI Traineeship",
+    badge: "AI & Machine Learning",
+    description:
+      "Comprehensive industrial training covering statistical machine learning, algorithms, deep neural network fundamentals, and Python pipelines applied to computer vision and predictive benchmarks.",
+    highlights: [
+      "Trained under Telecom Sector Skill Council (TSSC) national curriculum standards.",
+      "Engineered Python computer vision pipelines and statistical classification benchmarks.",
+      "Hands-on architectural evaluations of deep neural networks.",
+    ],
+    skills: ["Python", "Machine Learning", "Deep Learning", "Computer Vision", "TSSC Standards"],
+    verificationUrl: null, // Editable placeholder for direct certificate URL
+    status: "Verified Trainee Credential",
+  },
+  {
+    id: "winnovation-aiml",
+    title: "Industry Training on Applied AI/ML",
+    issuer: "WinnoVation Education Services",
+    period: "June 2025 – August 2025",
+    credentialType: "Applied ML Summer Traineeship",
+    badge: "Machine Learning",
+    description:
+      "Rigorous hands-on training in end-to-end machine learning workflows: exploratory data analysis, data pre-processing, regression, classification, and unsupervised clustering algorithms.",
+    highlights: [
+      "Implemented standard machine learning algorithms from mathematical foundations.",
+      "Tuned model hyperparameters and evaluated performance via precision-recall & ROC-AUC curves.",
+      "Completed hands-on projects in structured predictive modeling.",
+    ],
+    skills: ["Scikit-learn", "NumPy", "Pandas", "Regression", "Clustering", "EDA"],
+    verificationUrl: null,
+    status: "Verified Industry Trainee",
+  },
+  {
+    id: "guvi-python",
+    title: "Python Programming Certification",
+    issuer: "GUVI Geek Networks (IIT Madras Research Park)",
+    period: "2024",
+    credentialType: "Programming Credential",
+    badge: "Software Engineering",
+    description:
+      "Professional certification in Python programming covering data structures, object-oriented software design, file I/O operations, algorithmic problem solving, and clean code principles.",
+    highlights: [
+      "Mastered core Python language paradigms, memory model, and collections.",
+      "Built clean object-oriented modules and algorithmic problem solvers.",
+    ],
+    skills: ["Python", "Data Structures", "OOP", "Algorithm Design"],
+    verificationUrl: null,
+    status: "Verified Credential",
+  },
+  {
+    id: "linkedin-chatgpt",
+    title: "ChatGPT for Everyone — Generative AI",
+    issuer: "LinkedIn Learning",
+    period: "2024",
+    credentialType: "Generative AI Course",
+    badge: "Generative AI",
+    description:
+      "Specialized training in large language models, prompt engineering architectures, workflow automation, and conversational AI integration patterns.",
+    highlights: [
+      "Explored prompt design patterns and LLM application integrations.",
+      "Applied generative tools for software prototyping and automated workflows.",
+    ],
+    skills: ["Prompt Engineering", "Large Language Models", "Workflow Automation"],
+    verificationUrl: null,
+    status: "Verified Credential",
   },
 ];
 
@@ -684,32 +736,5 @@ export const educationHistory = [
     description:
       "Built rigorous foundations in C++, Data Structures, Relational Databases, Web Technologies, and Computer Architecture.",
     location: "Noida, India",
-  },
-];
-
-export const certifications = [
-  {
-    title: "Artificial Intelligence Course",
-    issuer: "Samsung Innovation Campus & Telecom Sector Skill Council (TSSC)",
-    date: "March 2026",
-    category: "AI & ML",
-  },
-  {
-    title: "Industry Training on AI/ML",
-    issuer: "WinnoVation Education Services",
-    date: "August 2025",
-    category: "Machine Learning",
-  },
-  {
-    title: "Python Programming Certification",
-    issuer: "GUVI",
-    date: "2024",
-    category: "Software Development",
-  },
-  {
-    title: "ChatGPT for Everyone",
-    issuer: "LinkedIn Learning",
-    date: "2024",
-    category: "Generative AI",
   },
 ];

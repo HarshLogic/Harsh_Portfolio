@@ -2,10 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import { personalData } from "@/data/portfolioData";
-import { Mail, Copy, Check, Send, ArrowUpRight, Clock, MapPin, Globe, Sparkles } from "lucide-react";
+import { Mail, Copy, Check, Send, ArrowUpRight, Clock, MapPin } from "lucide-react";
 import { LiquidSymmetryMotif } from "@/components/ui/CinematicMotifs";
 
-export default function ContactSection({ playAudioCue }) {
+export default function ContactSection() {
   const [copied, setCopied] = useState(false);
   const [currentTime, setCurrentTime] = useState("");
   const [formState, setFormState] = useState({ name: "", email: "", subject: "", message: "" });
@@ -32,7 +32,6 @@ export default function ContactSection({ playAudioCue }) {
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(personalData.contact.email);
     setCopied(true);
-    playAudioCue?.();
     setTimeout(() => setCopied(false), 2400);
   };
 
@@ -40,42 +39,41 @@ export default function ContactSection({ playAudioCue }) {
     e.preventDefault();
     if (!formState.email || !formState.message) return;
     
-    // Create an explicit mailto trigger so visitor's default email client opens with the pre-filled message
+    // Explicit mailto trigger so visitor's default email client opens with the pre-filled message
     const subject = encodeURIComponent(formState.subject || `Portfolio Inquiry from ${formState.name}`);
     const body = encodeURIComponent(`From: ${formState.name} (${formState.email})\n\nMessage:\n${formState.message}`);
     window.location.href = `mailto:${personalData.contact.email}?subject=${subject}&body=${body}`;
 
     setFormSubmitted(true);
-    playAudioCue?.();
   };
 
   return (
-    <section id="contact" className="py-28 relative overflow-hidden">
+    <section id="contact" className="py-20 sm:py-28 relative overflow-hidden">
       {/* Background Cinematic Atmosphere */}
       <div className="absolute left-1/2 -translate-x-1/2 bottom-[-100px] pointer-events-none select-none -z-10">
-        <LiquidSymmetryMotif className="w-[600px] h-[600px] opacity-[0.06] blur-sm" />
+        <LiquidSymmetryMotif className="w-[450px] h-[450px] sm:w-[600px] sm:h-[600px] opacity-[0.06] blur-sm" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-4">
+        <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-space-900 border border-space-700 text-cinematic-silver font-mono text-xs uppercase tracking-widest">
             <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice shadow-glow-ice" />
             <span>Initiate Direct Communication</span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-sans font-light tracking-tight text-cinematic-ivory">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-sans font-light tracking-tight text-cinematic-ivory">
             Let&apos;s Build <span className="font-semibold text-white">Something Meaningful</span>.
           </h2>
 
-          <p className="text-sm sm:text-base text-cinematic-silver max-w-xl mx-auto leading-relaxed font-normal">
-            Currently open to Software Engineering, Backend & Systems, and AI/ML opportunities. Let&apos;s discuss architecture, internships, or high-impact technical collaborations.
+          <p className="text-xs sm:text-sm md:text-base text-cinematic-silver max-w-xl mx-auto leading-relaxed font-normal">
+            Currently open to Software Engineering, Backend & Systems, and AI/ML opportunities. Let&apos;s discuss architecture, internships, or technical collaborations.
           </p>
         </div>
 
         {/* Contact Layout Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 mt-12 sm:mt-16 items-start">
           
           {/* Left Column: Direct Email Action & Social Profile Matrix */}
           <div className="lg:col-span-5 space-y-6">
@@ -171,21 +169,21 @@ export default function ContactSection({ playAudioCue }) {
           {/* Right Column: Interactive Direct Message Dispatch Form */}
           <div className="lg:col-span-7">
             <div className="p-6 sm:p-10 rounded-3xl bg-space-900 border border-space-700/80 shadow-2xl">
-              <div className="pb-6 border-b border-space-800 mb-6">
-                <h3 className="text-xl font-sans font-semibold text-cinematic-ivory">
+              <div className="pb-5 sm:pb-6 border-b border-space-800 mb-5 sm:mb-6">
+                <h3 className="text-lg sm:text-xl font-sans font-semibold text-cinematic-ivory">
                   Send a Structured Inquiry
                 </h3>
                 <p className="text-xs sm:text-sm text-cinematic-silver mt-1">
-                  Leave a note with your project or engineering opportunity. Launches with verified mailto payload.
+                  Leave a note with your engineering opportunity or project. Launches with verified mailto payload.
                 </p>
               </div>
 
               {formSubmitted ? (
-                <div className="p-8 rounded-2xl bg-space-950 border border-emerald-500/30 text-center space-y-4">
+                <div className="p-6 sm:p-8 rounded-2xl bg-space-950 border border-emerald-500/30 text-center space-y-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center mx-auto">
                     <Check size={24} />
                   </div>
-                  <h4 className="text-lg font-sans font-semibold text-white">Message Prepared</h4>
+                  <h4 className="text-base sm:text-lg font-sans font-semibold text-white">Message Prepared</h4>
                   <p className="text-xs text-cinematic-silver max-w-md mx-auto leading-relaxed">
                     Your message draft has been dispatched to your local mail client directed to{" "}
                     <span className="text-cinematic-ice">{personalData.contact.email}</span>. Harshvardhan will respond promptly.

@@ -2,29 +2,28 @@
 
 import React from "react";
 import { competitiveAndAchievements, personalData } from "@/data/portfolioData";
-import { Trophy, Code2, Award, ExternalLink, Flame, ShieldCheck, ArrowUpRight } from "lucide-react";
+import { Trophy, Code2, Award, ArrowUpRight } from "lucide-react";
 
 export default function AchievementsSection() {
-  // Profiles for direct verification
   const cpProfiles = personalData.socials.filter((s) =>
     ["LeetCode", "CodeChef", "Codolio", "HackerRank"].includes(s.name)
   );
 
   return (
-    <section id="achievements" className="py-24 border-b border-space-850 relative">
+    <section id="achievements" className="py-20 sm:py-24 border-b border-space-850 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-space-800">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 sm:pb-12 border-b border-space-800">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-space-900 border border-space-700/70 text-cinematic-silver font-mono text-xs uppercase tracking-widest mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice" />
-              <span>Section 05 // Competitive Rigor & Honors</span>
+              <span>Section 06 // Competitive Rigor & Honors</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-light tracking-tight text-cinematic-ivory">
               Achievements & <span className="font-semibold text-white">Competitive Proof</span>
             </h2>
-            <p className="text-sm sm:text-base text-cinematic-silver mt-2 max-w-xl">
+            <p className="text-xs sm:text-sm md:text-base text-cinematic-silver mt-2 max-w-xl">
               Verified problem-solving metrics, national hackathon semi-finals, open-source distinctions, and institutional leadership.
             </p>
           </div>
@@ -47,9 +46,9 @@ export default function AchievementsSection() {
         </div>
 
         {/* Highlight Flagship Metrics Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mt-10 sm:mt-12">
           {/* Tile 1: 895 Problems */}
-          <div className="p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
             <div className="flex items-center justify-between">
               <div className="p-3 rounded-2xl bg-space-950 border border-space-800 text-cinematic-ice">
                 <Code2 size={24} />
@@ -60,10 +59,10 @@ export default function AchievementsSection() {
             </div>
             <div>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl sm:text-5xl font-mono font-bold text-white tracking-tight">
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-mono font-bold text-white tracking-tight">
                   895+
                 </span>
-                <span className="text-sm font-mono text-cinematic-silver">Problems Solved</span>
+                <span className="text-xs sm:text-sm font-mono text-cinematic-silver">Problems Solved</span>
               </div>
               <p className="text-xs text-cinematic-silver mt-2 leading-relaxed">
                 Extensive coverage of graphs, dynamic programming, heaps, and tree traversals across LeetCode, CodeChef, and HackerRank.
@@ -76,7 +75,7 @@ export default function AchievementsSection() {
           </div>
 
           {/* Tile 2: Flipkart GRiD 8.0 & SIH */}
-          <div className="p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
             <div className="flex items-center justify-between">
               <div className="p-3 rounded-2xl bg-space-950 border border-space-800 text-amber-400">
                 <Trophy size={24} />
@@ -86,7 +85,7 @@ export default function AchievementsSection() {
               </span>
             </div>
             <div>
-              <div className="text-2xl sm:text-3xl font-sans font-semibold text-white tracking-tight">
+              <div className="text-xl sm:text-2xl lg:text-3xl font-sans font-semibold text-white tracking-tight">
                 Flipkart GRiD 8.0
               </div>
               <span className="text-xs font-mono text-amber-300 block mt-0.5">
@@ -103,7 +102,7 @@ export default function AchievementsSection() {
           </div>
 
           {/* Tile 3: GSSoC 2026 Top 5% */}
-          <div className="p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
+          <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-space-850 to-space-950 border border-space-700/90 shadow-cinematic-card space-y-4">
             <div className="flex items-center justify-between">
               <div className="p-3 rounded-2xl bg-space-950 border border-space-800 text-emerald-400">
                 <Award size={24} />
@@ -114,10 +113,10 @@ export default function AchievementsSection() {
             </div>
             <div>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl sm:text-5xl font-mono font-bold text-white tracking-tight">
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-mono font-bold text-white tracking-tight">
                   Top 5%
                 </span>
-                <span className="text-sm font-mono text-cinematic-silver">Global Rank</span>
+                <span className="text-xs sm:text-sm font-mono text-cinematic-silver">Global Rank</span>
               </div>
               <p className="text-xs text-cinematic-silver mt-2 leading-relaxed">
                 GirlScript Summer of Code 2026 Project Leader & Rising Star with 1,976 points scored in the master registry.
@@ -144,9 +143,9 @@ export default function AchievementsSection() {
                     {item.badge}
                   </span>
                 </div>
-                <h4 className="text-sm font-sans font-semibold text-cinematic-ivory">
+                <h3 className="text-sm font-sans font-semibold text-cinematic-ivory">
                   {item.title}
-                </h4>
+                </h3>
                 <p className="text-xs text-cinematic-silver mt-1 leading-relaxed">
                   {item.description}
                 </p>

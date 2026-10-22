@@ -158,3 +158,4 @@ export function WingedStatueMotif({ className = "w-64 h-64 opacity-20" }) {
     </svg>
   );
 }
+

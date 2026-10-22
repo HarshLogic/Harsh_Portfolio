@@ -2,21 +2,20 @@
 
 import React from "react";
 import { personalData } from "@/data/portfolioData";
-import { ArrowUp, Terminal, ShieldCheck, Heart } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
-export default function Footer({ playAudioCue }) {
+export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    playAudioCue?.();
   };
 
   return (
-    <footer className="bg-space-950 border-t border-space-850 pt-16 pb-12 relative">
+    <footer className="bg-space-950 border-t border-space-850 pt-12 sm:pt-16 pb-10 sm:pb-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-12 border-b border-space-850">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 sm:gap-8 pb-10 sm:pb-12 border-b border-space-850">
           {/* Brand & Mission */}
-          <div className="space-y-2">
+          <div className="space-y-1.5 sm:space-y-2">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-lg bg-space-850 border border-space-700 flex items-center justify-center font-mono font-bold text-xs text-cinematic-ivory">
                 {personalData.initials}
@@ -31,20 +30,21 @@ export default function Footer({ playAudioCue }) {
           </div>
 
           {/* Quick Jump Links & Back to Top */}
-          <div className="flex flex-wrap items-center gap-6">
-            <nav className="flex items-center gap-4 text-xs font-mono text-cinematic-silver">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <nav className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs font-mono text-cinematic-silver">
               <a href="#work" className="hover:text-white transition-colors">Work</a>
               <a href="#architecture" className="hover:text-white transition-colors">Architecture</a>
               <a href="#about" className="hover:text-white transition-colors">About</a>
               <a href="#skills" className="hover:text-white transition-colors">Skills</a>
               <a href="#experience" className="hover:text-white transition-colors">Experience</a>
+              <a href="#certificates" className="hover:text-white transition-colors">Certificates</a>
               <a href="#achievements" className="hover:text-white transition-colors">Achievements</a>
               <a href="#contact" className="hover:text-white transition-colors">Contact</a>
             </nav>
 
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 p-2.5 rounded-full bg-space-900 hover:bg-space-850 border border-space-700 text-xs font-mono text-cinematic-silver hover:text-white transition-all shadow-sm"
+              className="flex items-center gap-1.5 p-2 sm:p-2.5 rounded-full bg-space-900 hover:bg-space-850 border border-space-700 text-xs font-mono text-cinematic-silver hover:text-white transition-all shadow-sm"
               aria-label="Scroll to top of page"
             >
               <ArrowUp size={14} className="text-cinematic-ice" />
@@ -54,13 +54,13 @@ export default function Footer({ playAudioCue }) {
         </div>
 
         {/* Bottom Credits & Verification */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-cinematic-dim">
-          <div className="flex items-center gap-2">
+        <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs font-mono text-cinematic-dim text-center sm:text-left">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5 sm:gap-2">
             <span>© 2026 {personalData.name}.</span>
             <span>All master facts verified from official records.</span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center justify-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
             <span>Next.js 14 App Router · Tailwind CSS · Geist Typography</span>
           </div>

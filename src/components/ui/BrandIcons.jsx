@@ -34,3 +34,4 @@ export function LeetCodeIcon({ size = 16, className = "" }) {
     </svg>
   );
 }
+

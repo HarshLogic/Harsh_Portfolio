@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import { technicalSkills } from "@/data/portfolioData";
-import { Search, Sparkles, Filter, Code, Terminal, CheckCircle2 } from "lucide-react";
+import { Search } from "lucide-react";
 
-export default function TechnicalSkills({ playAudioCue }) {
+export default function TechnicalSkills() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -21,11 +21,11 @@ export default function TechnicalSkills({ playAudioCue }) {
     .filter((group) => group.skills.length > 0);
 
   return (
-    <section id="skills" className="py-24 border-b border-space-850 relative">
+    <section id="skills" className="py-20 sm:py-24 border-b border-space-850 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-space-800">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 sm:pb-10 border-b border-space-800">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-space-900 border border-space-700/70 text-cinematic-silver font-mono text-xs uppercase tracking-widest mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-cinematic-ice" />
@@ -34,7 +34,7 @@ export default function TechnicalSkills({ playAudioCue }) {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-light tracking-tight text-cinematic-ivory">
               Skills & <span className="font-semibold text-white">Engineering Stack</span>
             </h2>
-            <p className="text-sm sm:text-base text-cinematic-silver mt-2 max-w-xl">
+            <p className="text-xs sm:text-sm md:text-base text-cinematic-silver mt-2 max-w-xl">
               Categorized by technical domain with explicit depth indicators. Filter or search across languages, distributed engines, and AI tooling.
             </p>
           </div>
@@ -52,15 +52,12 @@ export default function TechnicalSkills({ playAudioCue }) {
           </div>
         </div>
 
-        {/* Category Pills */}
-        <div className="flex flex-wrap gap-1.5 pt-6 pb-8 overflow-x-auto">
+        {/* Category Pills (Scrollable horizontally on mobile) */}
+        <div className="flex items-center gap-1.5 pt-5 pb-7 overflow-x-auto max-w-full">
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => {
-                setActiveCategory(cat);
-                playAudioCue?.();
-              }}
+              onClick={() => setActiveCategory(cat)}
               className={`px-3 py-1.5 rounded-xl text-xs font-mono tracking-wider transition-all whitespace-nowrap ${
                 activeCategory === cat
                   ? "bg-space-800 text-cinematic-ivory border border-space-700 shadow-sm"
@@ -73,11 +70,11 @@ export default function TechnicalSkills({ playAudioCue }) {
         </div>
 
         {/* Categorized Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {filteredGroups.map((group) => (
             <div
               key={group.category}
-              className="p-6 rounded-2xl bg-space-900/80 border border-space-800 hover:border-space-700 transition-colors flex flex-col justify-between"
+              className="p-5 sm:p-6 rounded-2xl bg-space-900/80 border border-space-800 hover:border-space-700 transition-colors flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between pb-3 border-b border-space-850 mb-3">
