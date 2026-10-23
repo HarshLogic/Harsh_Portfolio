@@ -715,7 +715,7 @@ export const educationHistory = [
     affiliate: "Guru Gobind Singh Indraprastha University (GGSIPU), Delhi",
     degree: "Bachelor of Technology — Information Technology",
     period: "August 2024 – May/June 2027",
-    status: "In Progress (3rd Year)",
+    status: "In Progress (4th Year)",
     score: "9.29 / 10 CGPA",
     description:
       "Focusing on Distributed Operating Systems, Advanced Database Management, Object-Oriented Software Design, Machine Learning, and Computer Networks. Serving as Project Chair for R&D Cell and Placement Coordinator.",
@@ -730,6 +730,6 @@ export const educationHistory = [
     score: "8.08 / 10 CGPA",
     description:
       "Built rigorous foundations in Java, Data Structures, Relational Databases, Web Technologies, and Computer Architecture.",
-    location: "Noida, India",
+    location: "Greater Noida, India",
   },
 ];
