@@ -131,6 +131,47 @@ export const flagshipProjects = [
     },
   },
   {
+  id: "nex-world-travel",
+  title: "Nex-World Travel Platform",
+  tagline: "Full-Stack Travel Booking Engine, Membership Management & Activity Planner",
+  category: "Full-Stack & Systems",
+  featured: true,
+  accentColor: "#38BDF8",
+  metrics: [
+    { label: "Lighthouse Score", value: "96" },
+    { label: "API Response Time", value: "< 120ms", note: "Optimized Express REST endpoints" },
+    { label: "Role Management", value: "3 Roles", note: "RBAC for Admin, Employee, and Members" },
+    { label: "Catalog Coverage", value: "5+ Categories", note: "Tours, cruises, safaris, visa, and insurance" },
+    { label: "Multi-Currency", value: "Real-time", note: "Dynamic local pricing conversion" },
+  ],
+  technologies: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "JWT Authentication",
+    "Docker",
+    "Vercel",
+  ],
+  overview:
+    "An end-to-end travel platform and booking management engine designed for travel agencies. Features a public discovery portal for tour packages, automated booking workflows, a multi-tier dashboard for employees and administrators, and dedicated club membership portals.",
+  challenge:
+    "Handling end-to-end travel reservations requires synchronizing custom booking inquiries, managing tiered role-based access control (RBAC) across administrative and member panels, and providing seamless multi-currency support alongside responsive media delivery.",
+  architectureDecisions: [
+    "Architected a modular Next.js frontend paired with an Express API backend to decouple public catalog rendering from core administrative workflows.",
+    "Engineered role-based authentication pipelines (Admin, Employee, Member) with secure JWT handling and route-level middleware protection.",
+    "Designed a responsive catalog schema accommodating multi-type travel services including destination packages, luxury cruises, desert safaris, and visa processing.",
+    "Integrated dynamic currency calculation utilities and client-side scheduling components for streamlined availability lookups.",
+  ],
+  links: {
+    github: "https://github.com/HarshLogic/Nex-World-Travel",
+    demo: "https://www.nexworldtravel.com/", 
+    isRepoPublic: true,
+  },
+},
+  {
     id: "Finance Flow",
     title: "Finance Flow — Personal Finance & Wealth Management",
     tagline: "Multi-Asset Investment Tracking, 50-30-20 Budgeting & AI Analytics",
